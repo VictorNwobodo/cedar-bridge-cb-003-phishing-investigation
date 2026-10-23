@@ -1,0 +1,10 @@
+timestamp_wat,original_timestamp,record_id,source,account_or_session,action,outcome,interpretation_limit
+2026-10-19 09:04:00,2026-10-19 08:04 UTC,E01,Email,Amara,Phishing-like email received,Observed,Receipt does not prove interaction
+2026-10-19 09:09:00,Not supplied to second-level precision,P01,CB-LT-07 / mailclient.exe,Amara,HTML-named attachment saved,Observed,Execution not established
+2026-10-19 09:10:00,Not supplied to second-level precision,P02,CB-LT-07 / browser,Amara,Connected to portal.cedarbridge.example.invoice-review.example:443,Observed,HTTPS content not supplied
+2026-10-19 09:12:00,Not supplied to second-level precision,I02,Identity provider,Amara,Password sign-in failure from 198.51.100.77,Failed,Source IP does not identify actor
+2026-10-19 09:12:20,Not supplied to second-level precision,I03,Identity provider,Amara,Password sign-in failure from 198.51.100.77,Failed,Source IP does not identify actor
+2026-10-19 09:13:10,Not supplied to second-level precision,I04,Identity provider,Amara / S-77,Password sign-in success; session created,Success,Actor identity and authorization context unverified
+2026-10-19 09:14:00,Not supplied to second-level precision,C01,Cloud audit,S-77,ListObjects cb-finance,Success,Confirms listed bucket objects
+2026-10-19 09:15:00,Not supplied to second-level precision,C02,Cloud audit,S-77,GetObject cb-finance/invoices-2026.csv,Success; 24576 bytes returned,Does not establish subsequent use or exfiltration
+2026-10-19 09:17:00,Not supplied to second-level precision,C03,Cloud audit,S-77,PutBucketPolicy on cb-finance,Denied: insufficient_permission,No successful policy change shown
